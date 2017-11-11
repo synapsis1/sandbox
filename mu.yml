@@ -1,0 +1,12 @@
+namespace: mu
+environments:
+- name: acceptance
+- name: production
+service:
+  name: sandbox
+  port: 80
+  pathPatterns:
+  - /*
+  pipeline:
+    source:
+      repo: git@github.com:synapsis1/sandbox
